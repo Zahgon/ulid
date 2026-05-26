@@ -1,14 +1,11 @@
 package main
 
 import (
-	cryptorand "crypto/rand"
 	"fmt"
-	mathrand "math/rand"
 	"os"
 	"strings"
 	"time"
 
-	"github.com/oklog/ulid/v2"
 	getopt "github.com/pborman/getopt/v2"
 )
 
@@ -62,45 +59,10 @@ func main() {
 	}
 }
 
-func generate(quick, zero bool) {
-	entropy := cryptorand.Reader
-	if quick {
-		seed := time.Now().UnixNano()
-		source := mathrand.NewSource(seed)
-		entropy = mathrand.New(source)
-	}
-	if zero {
-		entropy = zeroReader{}
-	}
+func generate(quick, zero bool) { _ = "STUB: not implemented"; return }
 
-	id, err := ulid.New(ulid.Timestamp(time.Now()), entropy)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "%v\n", err)
-		os.Exit(1)
-	}
-
-	fmt.Fprintf(os.Stdout, "%s\n", id)
-}
-
-func parse(s string, local bool, f func(time.Time) string) {
-	id, err := ulid.Parse(s)
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "%v\n", err)
-		os.Exit(1)
-	}
-
-	t := ulid.Time(id.Time())
-	if !local {
-		t = t.UTC()
-	}
-	fmt.Fprintf(os.Stderr, "%s\n", f(t))
-}
+func parse(s string, local bool, f func(time.Time) string) { _ = "STUB: not implemented"; return }
 
 type zeroReader struct{}
 
-func (zeroReader) Read(p []byte) (int, error) {
-	for i := range p {
-		p[i] = 0
-	}
-	return len(p), nil
-}
+func (zeroReader) Read(p []byte) (int, error) { _ = "STUB: not implemented"; return 0, nil }
