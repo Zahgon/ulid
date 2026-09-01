@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="io.github.oklog.ulid.GoldenVectorTest" time="0.184" tests="285" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mac/Desktop/repotrans/ulid-java/target/test-classes:/Users/mac/Desktop/repotrans/ulid-java/target/classes:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Users/mac/Desktop/repotrans/.toolchain/jdk-17.0.20+8/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/mac/Desktop/repotrans/ulid-java/target/surefire/surefirebooter-20260825160238351_3.jar /Users/mac/Desktop/repotrans/ulid-java/target/surefire 2026-08-25T16-02-38_257-jvmRun1 surefire-20260825160238351_1tmp surefire_0-20260825160238351_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/mac/Desktop/repotrans/ulid-java/target/test-classes:/Users/mac/Desktop/repotrans/ulid-java/target/classes:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.2/junit-jupiter-5.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar:/Users/mac/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-commons/1.12.2/junit-platform-commons-1.12.2.jar:/Users/mac/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.2/junit-jupiter-params-5.12.2.jar:/Users/mac/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.2/junit-jupiter-engine-5.12.2.jar:/Users/mac/.m2/repository/org/junit/platform/junit-platform-engine/1.12.2/junit-platform-engine-1.12.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mac"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-07-21"/>
+    <property name="java.home" value="/Users/mac/Desktop/repotrans/.toolchain/jdk-17.0.20+8/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/mac/Desktop/repotrans/ulid-java"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/mac/Desktop/repotrans/ulid-java/target/surefire/surefirebooter-20260825160238351_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.20+8"/>
+    <property name="user.name" value="mac"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.5.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.20+8"/>
+    <property name="localRepository" value="/Users/mac/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/4d/q2lx2z494fb599_q8tkskywm0000gn/T/"/>
+    <property name="java.version" value="17.0.20"/>
+    <property name="user.dir" value="/Users/mac/Desktop/repotrans/ulid-java"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mac/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.20+8"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="monotonic()[1]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="monotonic()[2]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="monotonic()[3]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="monotonic()[4]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="monotonic()[5]" classname="golden vectors from the Go implementation" time="0.002"/>
+  <testcase name="monotonic()[6]" classname="golden vectors from the Go implementation" time="0.002"/>
+  <testcase name="example" classname="golden vectors from the Go implementation" time="0.003"/>
+  <testcase name="encode()[1]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[2]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[3]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[4]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[5]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[6]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[7]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[8]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[9]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[10]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[11]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[12]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[13]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[14]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[15]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[16]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[17]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[18]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[19]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[20]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[21]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[22]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[23]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[24]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[25]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[26]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[27]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[28]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[29]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[30]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[31]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[32]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[33]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[34]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[35]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[36]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[37]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[38]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[39]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[40]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[41]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[42]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[43]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[44]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[45]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[46]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[47]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[48]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[49]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[50]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[51]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[52]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[53]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[54]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[55]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[56]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[57]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[58]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[59]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[60]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[61]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[62]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[63]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[64]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[65]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[66]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[67]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[68]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[69]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[70]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[71]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[72]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[73]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[74]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[75]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[76]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[77]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[78]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[79]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[80]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[81]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[82]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[83]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[84]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[85]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[86]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[87]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[88]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[89]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[90]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[91]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[92]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[93]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[94]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[95]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[96]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[97]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[98]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[99]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[100]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[101]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[102]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[103]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[104]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[105]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[106]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[107]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[108]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[109]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[110]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[111]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[112]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[113]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[114]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[115]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[116]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="encode()[117]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[118]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="encode()[119]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="monotonicOverflow" classname="golden vectors from the Go implementation" time="0.002"/>
+  <testcase name="parseStrict()[1]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[2]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[3]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[4]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[5]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[6]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[7]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[8]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[9]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[10]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[11]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[12]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[13]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[14]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[15]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[16]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[17]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[18]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[19]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[20]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[21]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[22]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[23]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[24]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[25]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[26]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[27]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[28]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[29]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[30]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[31]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[32]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[33]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[34]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[35]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[36]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[37]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[38]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[39]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[40]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[41]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[42]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[43]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[44]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[45]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[46]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[47]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[48]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[49]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[50]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[51]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[52]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[53]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[54]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[55]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[56]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[57]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[58]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[59]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[60]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[61]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[62]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[63]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[64]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[65]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[66]" classname="golden vectors from the Go implementation" time="0.013"/>
+  <testcase name="parseStrict()[67]" classname="golden vectors from the Go implementation" time="0.017"/>
+  <testcase name="parseStrict()[68]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[69]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[70]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[71]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parseStrict()[72]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[73]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[74]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parseStrict()[75]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[1]" classname="golden vectors from the Go implementation" time="0.004"/>
+  <testcase name="parse()[2]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[3]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[4]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[5]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[6]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[7]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[8]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[9]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[10]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[11]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[12]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[13]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[14]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[15]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[16]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[17]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[18]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[19]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[20]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[21]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[22]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[23]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[24]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[25]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[26]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[27]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[28]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[29]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[30]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[31]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[32]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[33]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[34]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[35]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[36]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[37]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[38]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[39]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[40]" classname="golden vectors from the Go implementation" time="0.003"/>
+  <testcase name="parse()[41]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[42]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[43]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[44]" classname="golden vectors from the Go implementation" time="0.002"/>
+  <testcase name="parse()[45]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[46]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[47]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[48]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[49]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[50]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[51]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[52]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[53]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[54]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[55]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[56]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[57]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[58]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[59]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[60]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[61]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[62]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[63]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[64]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[65]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[66]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[67]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[68]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[69]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[70]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[71]" classname="golden vectors from the Go implementation" time="0.001"/>
+  <testcase name="parse()[72]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[73]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[74]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="parse()[75]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[1]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[2]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[3]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[4]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[5]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[6]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="timeConversion()[7]" classname="golden vectors from the Go implementation" time="0.0"/>
+  <testcase name="maxTime" classname="golden vectors from the Go implementation" time="0.0"/>
+</testsuite>
